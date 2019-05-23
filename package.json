@@ -1,12 +1,17 @@
 {
   "name": "utils-do",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": ["utils", "dominican", "geographic"],
+  "author": "Omar Gaston",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ogaston/utils-do.git"
+  },
+  "homepage": "https://github.com/ogaston/utils-do"
 }
