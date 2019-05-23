@@ -1,5 +1,64 @@
-module.exports = {
+const regions = {
+  cibao: {
+    name: "Cibao",
+    norte: {
+      id: 1,
+      name: "Cibao Norte"
+    },
+    sur: {
+      id: 2,
+      name: "Cibao Sur"
+    },
+    nordeste: {
+      id: 3,
+      name: "Cibao Nordeste"
+    },
+    noroeste: {
+      id: 4,
+      name: "Cibao Noroeste"
+    },
+  },
+  sur: {
+    name: "Sur",
+    valdesia: {
+      id: 5,
+      name: "Valdesia"
+    },
+    elValle: {
+      id: 6,
+      name: "El Valle"
+    },
+    enriquillo: {
+      id: 7,
+      name: "Enriquillo"
+    }
+  },
+  este: {
+    name: "Este",
+    yuma: {
+      id: 8,
+      name: "Yuma"
+    },
+    higuamo: {
+      id: 9,
+      name: "Higuamo"
+    },
+    ozama: {
+      id: 10,
+      name: "Ozama"
+    }
+
+  }
+}
+
+
+const provinces = {
   Azua: {
+    region: {
+      id: regions.sur.valdesia.id,
+      name: regions.sur.name,
+      zone: regions.sur.valdesia.name
+    },
     municipality: {
       "Azua de Compostela": [
         "Barreras",
@@ -22,7 +81,12 @@ module.exports = {
       "Tábara Arriba": ["Amiama Gómez", "Los Toros", "Tábara Abajo"]
     }
   },
-  Baoruco: {
+  Bahoruco: {
+    region: {
+      id: regions.sur.enriquillo.id,
+      name: regions.sur.name,
+      zone: regions.sur.enriquillo.name
+    },
     municipality: {
       Neiba: ["El Palmar"],
       Galván: ["El Salado"],
@@ -38,6 +102,11 @@ module.exports = {
     }
   },
   Barahona: {
+    region: {
+      id: regions.sur.enriquillo.id,
+      name: regions.sur.name,
+      zone: regions.sur.enriquillo.name
+    },
     municipality: {
       Barahona: ["El Cachón", "La Guázara", "Villa Central"],
       Cabral: [],
@@ -53,6 +122,11 @@ module.exports = {
     }
   },
   Dajabón: {
+    region: {
+      id: regions.cibao.noroeste.id,
+      name: regions.cibao.name,
+      zone: regions.cibao.noroeste.name
+    },
     municipality: {
       Dajabón: ["Cañongo"],
       "El Pino": ["Manuel Bueno"],
@@ -62,6 +136,11 @@ module.exports = {
     }
   },
   Duarte: {
+    region: {
+      id: regions.cibao.nordeste.id,
+      name: regions.cibao.name,
+      zone: regions.cibao.nordeste.name
+    },
     municipality: {
       "San Francisco de Macorís": [
         "Cenoví",
@@ -83,12 +162,22 @@ module.exports = {
     }
   },
   "El Seibo": {
+    region: {
+      id: regions.este.yuma.id,
+      name: regions.este.name,
+      zone: regions.este.yuma.name
+    },
     municipality: {
       "El Seibo": ["Pedro Sánchez", "San Francisco-Vicentillo", "Santa Lucía"],
       Miches: ["El Cedro", "La Gina"]
     }
   },
   "Elías Piña": {
+    region: {
+      id: regions.sur.elValle.id,
+      name: regions.sur.name,
+      zone: regions.sur.elValle.name
+    },
     municipality: {
       Comendador: ["Guayabo", "Sabana Larga"],
       Bánica: ["Sabana Cruz", "Sabana Higuero"],
@@ -99,6 +188,11 @@ module.exports = {
     }
   },
   Espaillat: {
+    region: {
+      id: regions.cibao.norte.id,
+      name: regions.cibao.name,
+      zone: regions.cibao.norte.name
+    },
     municipality: {
       Moca: [
         "Canca La Reina",
@@ -116,6 +210,11 @@ module.exports = {
     }
   },
   "Hato Mayor": {
+    region: {
+      id: regions.este.higuamo.id,
+      name: regions.este.name,
+      zone: regions.este.higuamo.name
+    },
     municipality: {
       "Hato Mayor del Rey": ["Guayabo Dulce", "Mata Palacio", "Yerba Buena"],
       "El Valle": [],
@@ -123,6 +222,11 @@ module.exports = {
     }
   },
   "Hermanas Mirabal": {
+    region: {
+      id: regions.cibao.nordeste.id,
+      name: regions.cibao.name,
+      zone: regions.cibao.nordeste.name
+    },
     municipality: {
       Salcedo: ["Jamao Afuera"],
       Tenares: ["Blanco"],
@@ -130,6 +234,11 @@ module.exports = {
     }
   },
   Independencia: {
+    region: {
+      id: regions.sur.enriquillo.id,
+      name: regions.sur.name,
+      zone: regions.sur.enriquillo.name
+    },
     municipality: {
       Jimaní: ["Boca de Cachón", "El Limón"],
       Cristóbal: ["El Batey 8"],
@@ -140,12 +249,22 @@ module.exports = {
     }
   },
   "La Altagracia": {
+    region: {
+      id: regions.este.yuma.id,
+      name: regions.este.name,
+      zone: regions.este.yuma.name
+    },
     municipality: {
       Higüey: ["La Otra Banda", "Lagunas de Nisibón", "Verón-Punta Cana"],
       "San Rafael del Yuma": ["Bayahibe", "Boca de Yuma"]
     }
   },
   "La Romana": {
+    region: {
+      id: regions.este.yuma.id,
+      name: regions.este.name,
+      zone: regions.este.yuma.name
+    },
     municipality: {
       "La Romana": ["Caleta"],
       Guaymate: [],
@@ -153,6 +272,11 @@ module.exports = {
     }
   },
   "La Vega": {
+    region: {
+      id: regions.cibao.sur.id,
+      name: regions.cibao.name,
+      zone: regions.cibao.sur.name
+    },
     municipality: {
       "La Concepción de La Vega": ["El Ranchito", "Río Verde Arriba"],
       Constanza: ["La Sabina", "Tireo"],
@@ -161,6 +285,11 @@ module.exports = {
     }
   },
   "María Trinidad Sánchez": {
+    region: {
+      id: regions.cibao.nordeste.id,
+      name: regions.cibao.name,
+      zone: regions.cibao.nordeste.name
+    },
     municipality: {
       Nagua: ["Arroyo al Medio ", "Las Gordas ", "San José de Matanzas"],
       Cabrera: ["Arroyo Salado ", "La Entrada"],
@@ -169,6 +298,11 @@ module.exports = {
     }
   },
   "Monseñor Nouel": {
+    region: {
+      id: regions.cibao.sur.id,
+      name: regions.cibao.name,
+      zone: regions.cibao.sur.name
+    },
     municipality: {
       Bonao: [
         "Arroyo Toro-Masipedro ",
@@ -182,6 +316,11 @@ module.exports = {
     }
   },
   Montecristi: {
+    region: {
+      id: regions.cibao.noroeste.id,
+      name: regions.cibao.name,
+      zone: regions.cibao.noroeste.name
+    },
     municipality: {
       Montecristi: [],
       Castañuela: ["Palo Verde"],
@@ -192,6 +331,11 @@ module.exports = {
     }
   },
   "Monte Plata": {
+    region: {
+      id: regions.este.higuamo.id,
+      name: regions.este.name,
+      zone: regions.este.higuamo.name
+    },
     municipality: {
       "Monte Plata": ["Boyá ", "Chirino ", "Don Juan"],
       Bayaguana: [],
@@ -201,12 +345,22 @@ module.exports = {
     }
   },
   Pedernales: {
+    region: {
+      id: regions.sur.enriquillo.id,
+      name: regions.sur.name,
+      zone: regions.sur.enriquillo.name
+    },
     municipality: {
       Pedernales: ["José Francisco Peña Gómez ", "Juancho"],
       Oviedo: []
     }
   },
   Peravia: {
+    region: {
+      id: regions.sur.valdesia.id,
+      name: regions.sur.name,
+      zone: regions.sur.valdesia.name
+    },
     municipality: {
       Baní: [
         "Catalina ",
@@ -223,6 +377,11 @@ module.exports = {
     }
   },
   "Puerto Plata": {
+    region: {
+      id: regions.cibao.norte.id,
+      name: regions.cibao.name,
+      zone: regions.cibao.norte.name
+    },
     municipality: {
       "Puerto Plata": ["Maimón ", "Yásica Arriba"],
       Altamira: ["Río Grande"],
@@ -236,6 +395,11 @@ module.exports = {
     }
   },
   Samamá: {
+    region: {
+      id: regions.cibao.nordeste.id,
+      name: regions.cibao.name,
+      zone: regions.cibao.nordeste.name
+    },
     municipality: {
       Samaná: ["Arroyo Barril ", "El Limón ", "Las Galeras"],
       "Las Terrenas": [],
@@ -243,6 +407,11 @@ module.exports = {
     }
   },
   "San Cristóbal": {
+    region: {
+      id: regions.sur.valdesia.id,
+      name: regions.sur.name,
+      zone: regions.sur.valdesia.name
+    },
     municipality: {
       "San Cristóbal": ["Hato Damas"],
       "Bajos de Haina": ["El Carril"],
@@ -253,7 +422,13 @@ module.exports = {
       "Villa Altagracia": ["La Cuchilla ", "Medina ", "San José del Puerto"],
       Yaguate: []
     },
+  },
     "San José de Ocoa": {
+      region: {
+        id: regions.sur.valdesia.id,
+        name: regions.sur.name,
+        zone: regions.sur.valdesia.name
+      },
       municipality: {
         "San José de Ocoa": [
           "El Naranjal ",
@@ -266,6 +441,11 @@ module.exports = {
       }
     },
     "San Juan": {
+      region: {
+        id: regions.sur.elValle.id,
+        name: regions.sur.name,
+        zone: regions.sur.elValle.name
+      },
       municipality: {
         "San Juan de la Maguana": [
           "El Rosario ",
@@ -286,6 +466,11 @@ module.exports = {
       }
     },
     "San Pedro de Macorís": {
+      region: {
+        id: regions.este.higuamo.id,
+        name: regions.este.name,
+        zone: regions.este.higuamo.name
+      },
       municipality: {
         "San Pedro de Macorís": [],
         Consuelo: [],
@@ -296,6 +481,11 @@ module.exports = {
       }
     },
     "Sánchez Ramírez": {
+      region: {
+        id: regions.cibao.sur.id,
+        name: regions.cibao.name,
+        zone: regions.cibao.sur.name
+      },
       municipality: {
         Cotuí: ["Caballero ", "Comedero Arriba ", "Quita Sueño"],
         Cevicos: ["La Cueva ", "Platanal"],
@@ -304,6 +494,11 @@ module.exports = {
       }
     },
     Santiago: {
+      region: {
+        id: regions.cibao.norte.id,
+        name: regions.cibao.name,
+        zone: regions.cibao.norte.name
+      },
       municipality: {
         Santiago: [
           "Baitoa ",
@@ -323,6 +518,11 @@ module.exports = {
       }
     },
     "Santiago Rodríguez": {
+      region: {
+        id: regions.cibao.noroeste.id,
+        name: regions.cibao.name,
+        zone: regions.cibao.noroeste.name
+      },
       municipality: {
         "San Ignacio de Sabaneta": [],
         "Los Almácigos": [],
@@ -330,6 +530,11 @@ module.exports = {
       }
     },
     "Santo Domingo": {
+      region: {
+        id: regions.este.ozama.id,
+        name: regions.este.name,
+        zone: regions.este.ozama.name
+      },
       municipality: {
         "Santo Domingo Este": ["San Luis"],
         "Boca Chica": ["La Caleta"],
@@ -341,6 +546,11 @@ module.exports = {
       }
     },
     Valverde: {
+      region: {
+        id: regions.cibao.noroeste.id,
+        name: regions.cibao.name,
+        zone: regions.cibao.noroeste.name
+      },
       municipality: {
         Mao: ["Ámina ", "Guatapanal ", "Jaibón (Pueblo Nuevo)"],
         Esperanza: ["Boca de Mao ", "Jicomé ", "Maizal ", "Paradero"],
@@ -348,4 +558,8 @@ module.exports = {
       }
     }
   }
-};
+
+
+  module.exports ={ regions, provinces }
+
+
