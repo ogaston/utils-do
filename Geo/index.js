@@ -1,50 +1,6 @@
 const { provinces, regions } = require("./geo-data");
-const UtilError = require("../Error/index");
+const { _searchBy, _validateArgs, addConstant } = require("../Helper/index")
 
-
-/**
- * Private - define a constant property
- * This function is not pure!
- * @param {Class | Object} obj 
- * @param {string} key 
- * @param {any} value
- * @returns Class | Object 
- */
-const addConstant = (obj, key, value) => {
-    Object.defineProperty(obj, key, {
-        enumerable: false,
-        configurable: false,
-        writable: false,
-        value: value
-    });
-    return obj
-}
-
-/**
- * Private - Search in a source by the key no matter
- * if the parameter has or not accents mark
- * 
- * @param {array} source 
- * @param {string} parameter 
- */
-const _searchBy = (source = [], parameter) => {
-    return source.find(
-        item => item.normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .toLowerCase() ==
-        parameter.toLowerCase()
-    )
-}
-
-/**
- * Private - validate the argument and if it fail throw an UtilError
- * @param {any} arg 
- */
-const _validateArgs = arg => {
-    if (typeof arg !== "string") {
-        throw UtilError("the province argument is required and must be string");
-    }
-}
 
 /**
  * Class related to geographical locations
@@ -149,7 +105,10 @@ class Geo {
                 .keys(regions[k])
                 .map(_k => regions[k][_k].name)
                 .filter(v => v);
-            return { [k] : zones }
+            return { 
+                region: regions[k].name,
+                zones 
+            }
         })
     }
 

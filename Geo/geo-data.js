@@ -389,7 +389,7 @@ const provinces = {
       Imbert: [],
       "Los Hidalgos": ["Navas"],
       Luperón: ["Belloso ", "Estrecho ", "La Isabela"],
-      Sosúa: ["Cabarete ", "Sabaneta de Yásica"],
+      Sosúa: ["Cabarete", "Sabaneta de Yásica"],
       "Villa Isabela": ["Estero Hondo ", "Gualete ", "La Jaiba"],
       "Villa Montellano": []
     }

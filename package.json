@@ -4,14 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
-  "keywords": ["utils", "dominican", "geographic"],
+  "keywords": [
+    "utils",
+    "dominican",
+    "geographic"
+  ],
   "author": "Omar Gaston",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/ogaston/utils-do.git"
   },
-  "homepage": "https://github.com/ogaston/utils-do"
+  "homepage": "https://github.com/ogaston/utils-do",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
 }
