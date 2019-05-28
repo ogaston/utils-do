@@ -1,5 +1,5 @@
-const Geo = require('./Geo')
-const Validator = require('./Validator')
+const Geo = require('./src/Geo')
+const Validator = require('./src/Validator')
 
 module.exports = {
   Geo,

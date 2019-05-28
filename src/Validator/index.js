@@ -1,4 +1,5 @@
 const { _searchBy, _validateArgs, addConstant } = require("../Helper/index")
+const rncValidation = require("./rnc-validation")
 
 
 class Validator {
@@ -41,7 +42,7 @@ class Validator {
     }
 
     /**
-     * Return the value formatted as a dominican id.
+     * Return the value formatted as a dominican tel number.
      *
      * @param {string | number} id
      */
@@ -51,6 +52,31 @@ class Validator {
         const regex = /\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})/g;
         const result = ("" + tel).replace(regex, "($1) $2-$3");
         return result.length === 14 ? result : undefined;
+    }
+
+    /**
+     * Validate if is a valid RNC
+     * 
+     * @param {string | number} input 
+     */
+    isRNC(input) {
+        return rncValidation("" + input);
+    }
+
+
+    /**
+     * Return the value formatted as a dominican RNC.
+     *
+     * @param {string | number} id
+     */
+    formatToRNC(rnc) {
+        const errMsg = "Debe ingresar el valor que sera formateado - formatToRNC(string | number)";
+        _validateArgs(rnc, errMsg, ["string", "number"])
+        if (this.isRNC(rnc)) {
+            const regex = /\(?(\d{3})\)?[- ]?(\d{5})[- ]?(\d{1})/g;
+            return ("" + rnc).replace(regex, "$1-$2-$3");
+        }
+        return undefined;
     }
 }
 
