@@ -25,6 +25,19 @@ console.log(result); // [ 'La Vega', 'Monseñor Nouel', 'Sánchez Ramírez' ]
 ```
 > Este método recupera una matriz de las provincias ubicadas en esa zona (subregión)
 
+### Referencia de la API
+
+| Método | Descripción | Devuelve |
+| --- | --- | --- |
+| `getProvinces()` | Devuelve una matriz de strings con el nombre de cada provincia | string[] |
+| `getMunicipalitiesOf(provincesName)` | Buscar una devolución de un objeto con los municipios de una provincia como propiedades | objeto o undefined |
+| `getMunicipalDistrictOf(provincia, municipio)` | Devolver el distrito municipal de un municipio de una provincia | string[] o undefined |
+| `getProvinceByMunicipality(municipio)` | Obtenga el nombre de las provincias a las que pertenece el municipio. Devuelve una matriz porque el nombre del municipio podría estar en dos o más provincias | string[] |
+| `getProvinceByMunicipalDistrict(municipalDisctric)` | Obtenga un objeto con la provincia y el municipio buscado por el distrito municipal | {provincia: string, municipio: string}[] |
+| `getRegions()` | Obtenga las macrorregiones del país | string[] |
+| `getRegionsAndZones()` | Obtenga un objeto con cada región con sus respectivas zonas | {[región]: string[]}[] |
+| `getProvincesByRegion(región)` | Obtenga las provincias que pertenecen a una región | string[] |
+| `getProvincesByZone()` | Obtenga las provincias que pertenecen a una zona | string[] |
 
 ## Validator
 
@@ -43,6 +56,16 @@ Validator.formatToIde(4022222222); // "402-2222222-2"
 ```
 > Estos métodos se utilizan para manejar la identificación de los dominicanos.
 
+### Referencia de API
+
+| Método | Descripción | Devuelve |
+| --- | --- | --- |
+| `isAnIde(id)` | Validar si el valor insertado es una identificación dominicana válida | booleano |
+| `formatToIde(id)` | Devuelve el valor formateado como una identificación dominicana. | string o undefined |
+| `isATel(tel)` | Devolver el distrito municipal de un municipio de una provincia. | booleano |
+| `formatToTel(tel)` | Devuelve el valor formateado como un número de teléfono dominicano. | string o undefined |
+| `isRNC(entrada)` | Valide si es un RNC válido. | booleano |
+| `formatToRNC(rnc)` | Devuelve el valor formateado como un RNC dominicano. | string o undefined |
 
 ## Contribuyendo
 
