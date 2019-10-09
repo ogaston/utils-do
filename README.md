@@ -6,7 +6,7 @@
 
 🚀 Get started [ Documentations in progress ]
 
-The Utils-DO, This small library is a handler and sources of data related to Dominican Republic.
+The Utils-DO, This small library is a handler and data source related to Dominican Republic.
 
 It has two main Class (yet)
 
@@ -48,7 +48,7 @@ console.log(result); // [ 'La Vega', 'Monseñor Nouel', 'Sánchez Ramírez' ]
 
 ## Validator
 
-This class is used to handle to validate generic data like the ide (Citizen identification or 'Cedula').
+This class is used to handle and validate generic data like the _IDE_ (Citizen identification or 'Cedula').
 
 ```javascript
 const { Validator } = require("utils-do");
@@ -75,7 +75,7 @@ Validator.formatToIde(4022222222); // "402-2222222-2"
 
 ## Contributing
 
-For help on growing up the repo, building and testing.
+Contact me for help on growing up the repo, building and testing.
 
 Please make your open a new issue / make your pull-request or [send me an email](mailto:omar.gaston.c@gmail.com).
 
