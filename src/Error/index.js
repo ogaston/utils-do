@@ -1,13 +1,14 @@
-
 /**
  * Error Handle for Util-Do errors
- * 
- * @param {*} message 
- * @param {*} type 
+ *
+ * @param {*} message
+ * @param {*} type
  */
-function UtilError(message, type) {
-    this.name = "UtilError" + (" | " + type || " | ");
-    this.message = (message || "");
+class UtilError extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "UtilDoPackageError";
+  }
 }
 
 UtilError.prototype = Error.prototype;

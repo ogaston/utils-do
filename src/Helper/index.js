@@ -44,7 +44,7 @@ const _searchBy = (source = [], parameter) => {
 const _execError = (isStrict, errObj) => {
   return isStrict
     ? () => {
-        throw UtilError(errObj);
+        throw new UtilError(errObj);
       }
     : () => {
         console.error(errObj);
@@ -57,10 +57,7 @@ const _execError = (isStrict, errObj) => {
  */
 const _validateArgs = (arg, errMsg, types = [], isStrict = false) => {
   const _errMsg = errMsg || "the value argument is required and must be string";
-  const errObj = UtilError(_errMsg);
-
-  const execErr = _execError(isStrict, errObj);
-
+  const execErr = _execError(isStrict, _errMsg);
   if (!types.length) {
     if (typeof arg !== "string") execErr();
   } else {
