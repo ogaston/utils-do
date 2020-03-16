@@ -11,6 +11,4 @@ class UtilError extends Error {
   }
 }
 
-UtilError.prototype = Error.prototype;
-
 module.exports = UtilError;
