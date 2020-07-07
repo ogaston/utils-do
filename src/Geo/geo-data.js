@@ -121,7 +121,7 @@ const provinces = {
       "Vicente Noble": ["Canoa", "Fondo Negro", "Quita Coraza"]
     }
   },
-  Dajabón: {
+  "Dajabón": {
     region: {
       id: regions.cibao.noroeste.id,
       name: regions.cibao.name,
@@ -394,7 +394,7 @@ const provinces = {
       "Villa Montellano": []
     }
   },
-  Samamá: {
+  "Samamá": {
     region: {
       id: regions.cibao.nordeste.id,
       name: regions.cibao.name,
