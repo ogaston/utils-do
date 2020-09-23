@@ -8,7 +8,7 @@
 
 The Utils-DO, This small library is a handler and data source related to Dominican Republic.
 
-It has two main Class (yet)
+**We have Typescript Support now**
 
 ## Installation
 

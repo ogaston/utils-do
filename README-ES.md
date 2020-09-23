@@ -8,7 +8,7 @@
 
 Utils-DO, esta pequeña librería es un manejador y fuentes de datos relacionados con República Dominicana.
 
-Tiene dos clases principales (aún)
+**Ahora adaptado para TypeScript**
 
 ## Instalación
 
