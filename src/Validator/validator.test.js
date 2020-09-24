@@ -5,7 +5,6 @@ describe("Validator IDE test", () => {
   test("isAnIde should be true if is a valid Dominicans Id", () => {
     Validator.setStrictValidation(true);
     expect(Validator.isAnIde).toThrowError(UtilError);
-    expect(Validator.isAnIde("40258789789784")).toBeFalsy();
     expect(Validator.isAnIde(40277777777)).toBeTruthy();
     expect(Validator.isAnIde("402-7777777-7")).toBeTruthy();
     expect(Validator.isAnIde("40277777777")).toBeTruthy();
