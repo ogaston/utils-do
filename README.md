@@ -82,3 +82,7 @@ Please make your open a new issue / make your pull-request or [send me an email]
 ## Thanks
 
 We would like to thank to anyone who use or contribute this repo.
+
+## License
+
+This project uses the following license: [MIT](<https://choosealicense.com/licenses/mit/>)
