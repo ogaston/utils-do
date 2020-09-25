@@ -82,3 +82,7 @@ Por favor, haga un nuevo issue / haga su pull-request o [enviame un correo elect
 ## Agradecimientos
 
 Quisiéramos agradecer a cualquiera que use o contribuya con este repositorio.
+
+## Licencia
+
+Este proyecto utiliza la siguiente licencia: [MIT](<https://choosealicense.com/licenses/mit/>)
