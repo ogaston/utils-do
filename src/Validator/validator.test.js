@@ -5,18 +5,18 @@ describe("Validator IDE test", () => {
   test("isAnIde should be true if is a valid Dominicans Id", () => {
     Validator.setStrictValidation(true);
     expect(Validator.isAnIde).toThrowError(UtilError);
-    expect(Validator.isAnIde(40277777777)).toBeTruthy();
-    expect(Validator.isAnIde("402-7777777-7")).toBeTruthy();
-    expect(Validator.isAnIde("40277777777")).toBeTruthy();
+    expect(Validator.isAnIde(40240953303)).toBeTruthy();
+    expect(Validator.isAnIde("402-7777777-7")).toBeFalsy();
+    expect(Validator.isAnIde("00112851662")).toBeTruthy();
   });
 
   test("formatToIde should return a string with as a formated id, if it cant return undefined.", () => {
     Validator.setStrictValidation(true);
     expect(Validator.formatToIde).toThrowError(UtilError);
     expect(Validator.formatToIde("40258789789784")).toBeUndefined();
-    expect(Validator.formatToIde(40277777777)).toEqual("402-7777777-7");
-    expect(Validator.formatToIde("402-77777777")).toEqual("402-7777777-7");
-    expect(Validator.formatToIde("40277777777")).toEqual("402-7777777-7");
+    expect(Validator.formatToIde(40240953303)).toEqual("402-4095330-3");
+    expect(Validator.formatToIde("402-40953303")).toEqual("402-4095330-3");
+    expect(Validator.formatToIde("00112851662")).toEqual("001-1285166-2");
   });
 });
 

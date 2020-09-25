@@ -102,6 +102,11 @@ class Validator {
 
 module.exports = new Validator();
 
+/**
+ * Validation algorithm
+ *
+ * @param {string | number } cid
+ */
 function v_id(cid) {
   function g__rd(bn) {
     for (let u = bn; u < bn + 10; u++) {
@@ -109,7 +114,7 @@ function v_id(cid) {
     }
   }
 
-  const _c = cid.replace(/\D/g, "");
+  const _c = String(cid).replace(/\D/g, "");
   let sc = "";
 
   for (let i = 0; i < 10; i++) {
