@@ -1,5 +1,5 @@
+const { isRnc } = require("sdq");
 const { _searchBy, _validateArgs, addConstant } = require("../Helper/index");
-const rncValidation = require("./rnc-validation");
 
 let strictValidation = false;
 
@@ -81,7 +81,7 @@ class Validator {
    * @param {string | number} input
    */
   isRNC(input) {
-    return rncValidation("" + input);
+    return isRnc("" + input);
   }
 
   /**
