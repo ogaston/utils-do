@@ -13,7 +13,7 @@ const addConstant = (obj, key, value) => {
     enumerable: false,
     configurable: false,
     writable: false,
-    value: value
+    value: value,
   });
   return obj;
 };
@@ -27,11 +27,15 @@ const addConstant = (obj, key, value) => {
  */
 const _searchBy = (source = [], parameter) => {
   return source.find(
-    item =>
+    (item) =>
       item
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "")
-        .toLowerCase() == parameter.toLowerCase()
+        .toLowerCase() ==
+      parameter
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
   );
 };
 
@@ -61,7 +65,7 @@ const _validateArgs = (arg, errMsg, types = [], isStrict = false) => {
   if (!types.length) {
     if (typeof arg !== "string") execErr();
   } else {
-    if (!types.filter(t => typeof arg == t).length) {
+    if (!types.filter((t) => typeof arg == t).length) {
       execErr();
     }
   }
@@ -70,5 +74,5 @@ const _validateArgs = (arg, errMsg, types = [], isStrict = false) => {
 module.exports = {
   _validateArgs,
   _searchBy,
-  addConstant
+  addConstant,
 };

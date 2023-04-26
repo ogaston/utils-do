@@ -3,61 +3,59 @@ const regions = {
     name: "Cibao",
     norte: {
       id: 1,
-      name: "Cibao Norte"
+      name: "Cibao Norte",
     },
     sur: {
       id: 2,
-      name: "Cibao Sur"
+      name: "Cibao Sur",
     },
     nordeste: {
       id: 3,
-      name: "Cibao Nordeste"
+      name: "Cibao Nordeste",
     },
     noroeste: {
       id: 4,
-      name: "Cibao Noroeste"
+      name: "Cibao Noroeste",
     },
   },
   sur: {
     name: "Sur",
     valdesia: {
       id: 5,
-      name: "Valdesia"
+      name: "Valdesia",
     },
     elValle: {
       id: 6,
-      name: "El Valle"
+      name: "El Valle",
     },
     enriquillo: {
       id: 7,
-      name: "Enriquillo"
-    }
+      name: "Enriquillo",
+    },
   },
   este: {
     name: "Este",
     yuma: {
       id: 8,
-      name: "Yuma"
+      name: "Yuma",
     },
     higuamo: {
       id: 9,
-      name: "Higuamo"
+      name: "Higuamo",
     },
     ozama: {
       id: 10,
-      name: "Ozama"
-    }
-
-  }
-}
-
+      name: "Ozama",
+    },
+  },
+};
 
 const provinces = {
   Azua: {
     region: {
       id: regions.sur.valdesia.id,
       name: regions.sur.name,
-      zone: regions.sur.valdesia.name
+      zone: regions.sur.valdesia.name,
     },
     municipality: {
       "Azua de Compostela": [
@@ -68,7 +66,7 @@ const provinces = {
         "Las Barías-La Estancia",
         "Las Lomas",
         "Los Jovillos",
-        "Puerto Viejo"
+        "Puerto Viejo",
       ],
       Estebanía: [],
       Guayabal: [],
@@ -78,14 +76,14 @@ const provinces = {
       Peralta: [],
       "Pueblo Viejo": ["El Rosario"],
       "Sabana Yegua": ["Proyecto 4", "Ganadero", "Proyecto 2-C"],
-      "Tábara Arriba": ["Amiama Gómez", "Los Toros", "Tábara Abajo"]
-    }
+      "Tábara Arriba": ["Amiama Gómez", "Los Toros", "Tábara Abajo"],
+    },
   },
   Bahoruco: {
     region: {
       id: regions.sur.enriquillo.id,
       name: regions.sur.name,
-      zone: regions.sur.enriquillo.name
+      zone: regions.sur.enriquillo.name,
     },
     municipality: {
       Neiba: ["El Palmar"],
@@ -97,15 +95,15 @@ const provinces = {
         "Monserrat",
         "Santa Bárbara-El 6 ",
         "Santana ",
-        "Uvilla"
-      ]
-    }
+        "Uvilla",
+      ],
+    },
   },
   Barahona: {
     region: {
       id: regions.sur.enriquillo.id,
       name: regions.sur.name,
-      zone: regions.sur.enriquillo.name
+      zone: regions.sur.enriquillo.name,
     },
     municipality: {
       Barahona: ["El Cachón", "La Guázara", "Villa Central"],
@@ -118,35 +116,35 @@ const provinces = {
       "Las Salinas": [],
       Paraíso: ["Los Patos"],
       Polo: [],
-      "Vicente Noble": ["Canoa", "Fondo Negro", "Quita Coraza"]
-    }
+      "Vicente Noble": ["Canoa", "Fondo Negro", "Quita Coraza"],
+    },
   },
-  "Dajabón": {
+  Dajabón: {
     region: {
       id: regions.cibao.noroeste.id,
       name: regions.cibao.name,
-      zone: regions.cibao.noroeste.name
+      zone: regions.cibao.noroeste.name,
     },
     municipality: {
       Dajabón: ["Cañongo"],
       "El Pino": ["Manuel Bueno"],
       "Loma de Cabrera": ["Capotillo", "Santiago de la Cruz"],
       Partido: [],
-      Restauración: []
-    }
+      Restauración: [],
+    },
   },
   Duarte: {
     region: {
       id: regions.cibao.nordeste.id,
       name: regions.cibao.name,
-      zone: regions.cibao.nordeste.name
+      zone: regions.cibao.nordeste.name,
     },
     municipality: {
       "San Francisco de Macorís": [
         "Cenoví",
         "Jaya",
         "La Peña",
-        "Presidente Don Antonio Guzmán Fernández"
+        "Presidente Don Antonio Guzmán Fernández",
       ],
       Arenoso: ["El Aguacate", "Los Coles"],
       Castillo: [],
@@ -157,26 +155,26 @@ const provinces = {
         "Agua Santa del Yuna",
         "Barraquito",
         "Cristo Rey de Guaraguao",
-        "Las Táranas"
-      ]
-    }
+        "Las Táranas",
+      ],
+    },
   },
   "El Seibo": {
     region: {
       id: regions.este.yuma.id,
       name: regions.este.name,
-      zone: regions.este.yuma.name
+      zone: regions.este.yuma.name,
     },
     municipality: {
       "El Seibo": ["Pedro Sánchez", "San Francisco-Vicentillo", "Santa Lucía"],
-      Miches: ["El Cedro", "La Gina"]
-    }
+      Miches: ["El Cedro", "La Gina"],
+    },
   },
   "Elías Piña": {
     region: {
       id: regions.sur.elValle.id,
       name: regions.sur.name,
-      zone: regions.sur.elValle.name
+      zone: regions.sur.elValle.name,
     },
     municipality: {
       Comendador: ["Guayabo", "Sabana Larga"],
@@ -184,14 +182,14 @@ const provinces = {
       "El Llano": ["Guanito"],
       "Hondo Valle": ["Rancho de la Guardia"],
       "Juan Santiago": [],
-      "Pedro Santana": ["Río Limpio"]
-    }
+      "Pedro Santana": ["Río Limpio"],
+    },
   },
   Espaillat: {
     region: {
       id: regions.cibao.norte.id,
       name: regions.cibao.name,
-      zone: regions.cibao.norte.name
+      zone: regions.cibao.norte.name,
     },
     municipality: {
       Moca: [
@@ -202,42 +200,42 @@ const provinces = {
         "La Ortega",
         "Las Lagunas",
         "Monte de la Jagua",
-        "San Víctor"
+        "San Víctor",
       ],
       "Cayetano Germosén": [],
       "Gaspar Hernández": ["Joba Arriba", "Veragua", "Villa Magante"],
-      "Jamao al Norte": []
-    }
+      "Jamao al Norte": [],
+    },
   },
   "Hato Mayor": {
     region: {
       id: regions.este.higuamo.id,
       name: regions.este.name,
-      zone: regions.este.higuamo.name
+      zone: regions.este.higuamo.name,
     },
     municipality: {
       "Hato Mayor del Rey": ["Guayabo Dulce", "Mata Palacio", "Yerba Buena"],
       "El Valle": [],
-      "Sabana de la Mar": ["Elupina Cordero de Las Cañitas"]
-    }
+      "Sabana de la Mar": ["Elupina Cordero de Las Cañitas"],
+    },
   },
   "Hermanas Mirabal": {
     region: {
       id: regions.cibao.nordeste.id,
       name: regions.cibao.name,
-      zone: regions.cibao.nordeste.name
+      zone: regions.cibao.nordeste.name,
     },
     municipality: {
       Salcedo: ["Jamao Afuera"],
       Tenares: ["Blanco"],
-      "Villa Tapia": []
-    }
+      "Villa Tapia": [],
+    },
   },
   Independencia: {
     region: {
       id: regions.sur.enriquillo.id,
       name: regions.sur.name,
-      zone: regions.sur.enriquillo.name
+      zone: regions.sur.enriquillo.name,
     },
     municipality: {
       Jimaní: ["Boca de Cachón", "El Limón"],
@@ -245,63 +243,63 @@ const provinces = {
       Duvergé: ["Vengan a Ver"],
       "La Descubierta": [],
       Mella: ["La Colonia"],
-      "Postrer Río": ["Guayabal"]
-    }
+      "Postrer Río": ["Guayabal"],
+    },
   },
   "La Altagracia": {
     region: {
       id: regions.este.yuma.id,
       name: regions.este.name,
-      zone: regions.este.yuma.name
+      zone: regions.este.yuma.name,
     },
     municipality: {
       Higüey: ["La Otra Banda", "Lagunas de Nisibón", "Verón-Punta Cana"],
-      "San Rafael del Yuma": ["Bayahibe", "Boca de Yuma"]
-    }
+      "San Rafael del Yuma": ["Bayahibe", "Boca de Yuma"],
+    },
   },
   "La Romana": {
     region: {
       id: regions.este.yuma.id,
       name: regions.este.name,
-      zone: regions.este.yuma.name
+      zone: regions.este.yuma.name,
     },
     municipality: {
       "La Romana": ["Caleta"],
       Guaymate: [],
-      "Villa Hermosa": ["Cumayasa"]
-    }
+      "Villa Hermosa": ["Cumayasa"],
+    },
   },
   "La Vega": {
     region: {
       id: regions.cibao.sur.id,
       name: regions.cibao.name,
-      zone: regions.cibao.sur.name
+      zone: regions.cibao.sur.name,
     },
     municipality: {
       "La Concepción de La Vega": ["El Ranchito", "Río Verde Arriba"],
       Constanza: ["La Sabina", "Tireo"],
       Jarabacoa: ["Buena Vista", "Manabao"],
-      "Jima Abajo": ["Rincón"]
-    }
+      "Jima Abajo": ["Rincón"],
+    },
   },
   "María Trinidad Sánchez": {
     region: {
       id: regions.cibao.nordeste.id,
       name: regions.cibao.name,
-      zone: regions.cibao.nordeste.name
+      zone: regions.cibao.nordeste.name,
     },
     municipality: {
       Nagua: ["Arroyo al Medio ", "Las Gordas ", "San José de Matanzas"],
       Cabrera: ["Arroyo Salado ", "La Entrada"],
       "El Factor": ["El Pozo"],
-      "Río San Juan": []
-    }
+      "Río San Juan": [],
+    },
   },
   "Monseñor Nouel": {
     region: {
       id: regions.cibao.sur.id,
       name: regions.cibao.name,
-      zone: regions.cibao.sur.name
+      zone: regions.cibao.sur.name,
     },
     municipality: {
       Bonao: [
@@ -309,17 +307,17 @@ const provinces = {
         "La Salvia-Los Quemados ",
         "Jayaco ",
         "Juma Bejucal ",
-        "Sabana del Puerto"
+        "Sabana del Puerto",
       ],
       Maimón: [],
-      "Piedra Blanca": ["Juan Adrián ", "Villa Sonador"]
-    }
+      "Piedra Blanca": ["Juan Adrián ", "Villa Sonador"],
+    },
   },
   Montecristi: {
     region: {
       id: regions.cibao.noroeste.id,
       name: regions.cibao.name,
-      zone: regions.cibao.noroeste.name
+      zone: regions.cibao.noroeste.name,
     },
     municipality: {
       Montecristi: [],
@@ -327,39 +325,39 @@ const provinces = {
       Guayubín: ["Cana Chapetón ", "Hatillo Palma ", "Villa Elisa"],
       "Las Matas de Santa Cruz": [],
       "Pepillo Salcedo": [],
-      "Villa Vásquez": []
-    }
+      "Villa Vásquez": [],
+    },
   },
   "Monte Plata": {
     region: {
       id: regions.este.higuamo.id,
       name: regions.este.name,
-      zone: regions.este.higuamo.name
+      zone: regions.este.higuamo.name,
     },
     municipality: {
       "Monte Plata": ["Boyá ", "Chirino ", "Don Juan"],
       Bayaguana: [],
       Peralvillo: [],
       "Sabana Grande de Boyá": ["Gonzalo ", "Majagual"],
-      Yamasá: ["Los Botados"]
-    }
+      Yamasá: ["Los Botados"],
+    },
   },
   Pedernales: {
     region: {
       id: regions.sur.enriquillo.id,
       name: regions.sur.name,
-      zone: regions.sur.enriquillo.name
+      zone: regions.sur.enriquillo.name,
     },
     municipality: {
       Pedernales: ["José Francisco Peña Gómez ", "Juancho"],
-      Oviedo: []
-    }
+      Oviedo: [],
+    },
   },
   Peravia: {
     region: {
       id: regions.sur.valdesia.id,
       name: regions.sur.name,
-      zone: regions.sur.valdesia.name
+      zone: regions.sur.valdesia.name,
     },
     municipality: {
       Baní: [
@@ -371,16 +369,16 @@ const provinces = {
         "Paya ",
         "Sabana Buey ",
         "Villa Fundación ",
-        "Villa Sombrero"
+        "Villa Sombrero",
       ],
-      Nizao: ["Pizarrete ", "Santana"]
-    }
+      Nizao: ["Pizarrete ", "Santana"],
+    },
   },
   "Puerto Plata": {
     region: {
       id: regions.cibao.norte.id,
       name: regions.cibao.name,
-      zone: regions.cibao.norte.name
+      zone: regions.cibao.norte.name,
     },
     municipality: {
       "Puerto Plata": ["Maimón ", "Yásica Arriba"],
@@ -391,26 +389,26 @@ const provinces = {
       Luperón: ["Belloso ", "Estrecho ", "La Isabela"],
       Sosúa: ["Cabarete", "Sabaneta de Yásica"],
       "Villa Isabela": ["Estero Hondo ", "Gualete ", "La Jaiba"],
-      "Villa Montellano": []
-    }
+      "Villa Montellano": [],
+    },
   },
-  "Samamá": {
+  Samaná: {
     region: {
       id: regions.cibao.nordeste.id,
       name: regions.cibao.name,
-      zone: regions.cibao.nordeste.name
+      zone: regions.cibao.nordeste.name,
     },
     municipality: {
       Samaná: ["Arroyo Barril ", "El Limón ", "Las Galeras"],
       "Las Terrenas": [],
-      Sánchez: []
-    }
+      Sánchez: [],
+    },
   },
   "San Cristóbal": {
     region: {
       id: regions.sur.valdesia.id,
       name: regions.sur.name,
-      zone: regions.sur.valdesia.name
+      zone: regions.sur.valdesia.name,
     },
     municipality: {
       "San Cristóbal": ["Hato Damas"],
@@ -420,146 +418,143 @@ const provinces = {
       "Sabana Grande de Palenque": [],
       "San Gregorio de Nigua": [],
       "Villa Altagracia": ["La Cuchilla ", "Medina ", "San José del Puerto"],
-      Yaguate: []
+      Yaguate: [],
     },
   },
-    "San José de Ocoa": {
-      region: {
-        id: regions.sur.valdesia.id,
-        name: regions.sur.name,
-        zone: regions.sur.valdesia.name
-      },
-      municipality: {
-        "San José de Ocoa": [
-          "El Naranjal ",
-          "El Pinar ",
-          "La Ciénaga ",
-          "Nizao-Las Auyamas"
-        ],
-        "Rancho Arriba": [],
-        "Sabana Larga": []
-      }
+  "San José de Ocoa": {
+    region: {
+      id: regions.sur.valdesia.id,
+      name: regions.sur.name,
+      zone: regions.sur.valdesia.name,
     },
-    "San Juan": {
-      region: {
-        id: regions.sur.elValle.id,
-        name: regions.sur.name,
-        zone: regions.sur.elValle.name
-      },
-      municipality: {
-        "San Juan de la Maguana": [
-          "El Rosario ",
-          "Guanito ",
-          "Hato del Padre ",
-          "Hato Nuevo ",
-          "La Jagua ",
-          "Las Charcas de María Nova ",
-          "Pedro Corto ",
-          "Sabana Alta ",
-          "Sabaneta"
-        ],
-        Bohechío: ["Arroyo Cano ", "Yaque"],
-        "El Cercado": ["Batista ", "Derrumbadero"],
-        "Juan de Herrera": ["Jínova"],
-        "Las Matas de Farfán": ["Carrera de Yegua", "Matayaya"],
-        Vallejuelo: ["Jorjillo"]
-      }
+    municipality: {
+      "San José de Ocoa": [
+        "El Naranjal ",
+        "El Pinar ",
+        "La Ciénaga ",
+        "Nizao-Las Auyamas",
+      ],
+      "Rancho Arriba": [],
+      "Sabana Larga": [],
     },
-    "San Pedro de Macorís": {
-      region: {
-        id: regions.este.higuamo.id,
-        name: regions.este.name,
-        zone: regions.este.higuamo.name
-      },
-      municipality: {
-        "San Pedro de Macorís": [],
-        Consuelo: [],
-        Guayacanes: [],
-        Quisqueya: [],
-        "Ramón Santana": [],
-        "San José de Los Llanos": ["El Puerto ", "Gautier"]
-      }
+  },
+  "San Juan": {
+    region: {
+      id: regions.sur.elValle.id,
+      name: regions.sur.name,
+      zone: regions.sur.elValle.name,
     },
-    "Sánchez Ramírez": {
-      region: {
-        id: regions.cibao.sur.id,
-        name: regions.cibao.name,
-        zone: regions.cibao.sur.name
-      },
-      municipality: {
-        Cotuí: ["Caballero ", "Comedero Arriba ", "Quita Sueño"],
-        Cevicos: ["La Cueva ", "Platanal"],
-        Fantino: [],
-        "La Mata": ["Angelina ", "La Bija ", "Hernando Alonzo"]
-      }
+    municipality: {
+      "San Juan de la Maguana": [
+        "El Rosario ",
+        "Guanito ",
+        "Hato del Padre ",
+        "Hato Nuevo ",
+        "La Jagua ",
+        "Las Charcas de María Nova ",
+        "Pedro Corto ",
+        "Sabana Alta ",
+        "Sabaneta",
+      ],
+      Bohechío: ["Arroyo Cano ", "Yaque"],
+      "El Cercado": ["Batista ", "Derrumbadero"],
+      "Juan de Herrera": ["Jínova"],
+      "Las Matas de Farfán": ["Carrera de Yegua", "Matayaya"],
+      Vallejuelo: ["Jorjillo"],
     },
-    Santiago: {
-      region: {
-        id: regions.cibao.norte.id,
-        name: regions.cibao.name,
-        zone: regions.cibao.norte.name
-      },
-      municipality: {
-        Santiago: [
-          "Baitoa ",
-          "Hato del Yaque ",
-          "La Canela ",
-          "Pedro García ",
-          "San Francisco de Jacagua"
-        ],
-        Bisonó: [],
-        Jánico: ["El Caimito ", "Juncalito"],
-        "Licey al Medio": ["Las Palomas"],
-        Puñal: ["Canabacoa ", "Guayabal"],
-        "Sabana Iglesia": [],
-        "San José de las Matas": ["El Rubio ", "La Cuesta ", "Las Placetas"],
-        Tamboril: ["Canca La Piedra"],
-        "Villa González": ["El Limón ", "Palmar Arriba"]
-      }
+  },
+  "San Pedro de Macorís": {
+    region: {
+      id: regions.este.higuamo.id,
+      name: regions.este.name,
+      zone: regions.este.higuamo.name,
     },
-    "Santiago Rodríguez": {
-      region: {
-        id: regions.cibao.noroeste.id,
-        name: regions.cibao.name,
-        zone: regions.cibao.noroeste.name
-      },
-      municipality: {
-        "San Ignacio de Sabaneta": [],
-        "Los Almácigos": [],
-        Monción: []
-      }
+    municipality: {
+      "San Pedro de Macorís": [],
+      Consuelo: [],
+      Guayacanes: [],
+      Quisqueya: [],
+      "Ramón Santana": [],
+      "San José de Los Llanos": ["El Puerto ", "Gautier"],
     },
-    "Santo Domingo": {
-      region: {
-        id: regions.este.ozama.id,
-        name: regions.este.name,
-        zone: regions.este.ozama.name
-      },
-      municipality: {
-        "Santo Domingo Este": ["San Luis"],
-        "Boca Chica": ["La Caleta"],
-        "Los Alcarrizos": ["Palmarejo-Villa Linda ", "Pantoja"],
-        "Pedro Brand": ["La Cuaba ", "La Guáyiga"],
-        "San Antonio de Guerra": ["Hato Viejo"],
-        "Santo Domingo Norte": ["La Victoria"],
-        "Santo Domingo Oeste": []
-      }
+  },
+  "Sánchez Ramírez": {
+    region: {
+      id: regions.cibao.sur.id,
+      name: regions.cibao.name,
+      zone: regions.cibao.sur.name,
     },
-    Valverde: {
-      region: {
-        id: regions.cibao.noroeste.id,
-        name: regions.cibao.name,
-        zone: regions.cibao.noroeste.name
-      },
-      municipality: {
-        Mao: ["Ámina ", "Guatapanal ", "Jaibón (Pueblo Nuevo)"],
-        Esperanza: ["Boca de Mao ", "Jicomé ", "Maizal ", "Paradero"],
-        "Laguna Salada": ["Cruce de Guayacanes ", "Jaibón ", "La Caya"]
-      }
-    }
-  }
+    municipality: {
+      Cotuí: ["Caballero ", "Comedero Arriba ", "Quita Sueño"],
+      Cevicos: ["La Cueva ", "Platanal"],
+      Fantino: [],
+      "La Mata": ["Angelina ", "La Bija ", "Hernando Alonzo"],
+    },
+  },
+  Santiago: {
+    region: {
+      id: regions.cibao.norte.id,
+      name: regions.cibao.name,
+      zone: regions.cibao.norte.name,
+    },
+    municipality: {
+      Santiago: [
+        "Baitoa ",
+        "Hato del Yaque ",
+        "La Canela ",
+        "Pedro García ",
+        "San Francisco de Jacagua",
+      ],
+      Bisonó: [],
+      Jánico: ["El Caimito ", "Juncalito"],
+      "Licey al Medio": ["Las Palomas"],
+      Puñal: ["Canabacoa ", "Guayabal"],
+      "Sabana Iglesia": [],
+      "San José de las Matas": ["El Rubio ", "La Cuesta ", "Las Placetas"],
+      Tamboril: ["Canca La Piedra"],
+      "Villa González": ["El Limón ", "Palmar Arriba"],
+    },
+  },
+  "Santiago Rodríguez": {
+    region: {
+      id: regions.cibao.noroeste.id,
+      name: regions.cibao.name,
+      zone: regions.cibao.noroeste.name,
+    },
+    municipality: {
+      "San Ignacio de Sabaneta": [],
+      "Los Almácigos": [],
+      Monción: [],
+    },
+  },
+  "Santo Domingo": {
+    region: {
+      id: regions.este.ozama.id,
+      name: regions.este.name,
+      zone: regions.este.ozama.name,
+    },
+    municipality: {
+      "Santo Domingo Este": ["San Luis"],
+      "Boca Chica": ["La Caleta"],
+      "Los Alcarrizos": ["Palmarejo-Villa Linda ", "Pantoja"],
+      "Pedro Brand": ["La Cuaba ", "La Guáyiga"],
+      "San Antonio de Guerra": ["Hato Viejo"],
+      "Santo Domingo Norte": ["La Victoria"],
+      "Santo Domingo Oeste": [],
+    },
+  },
+  Valverde: {
+    region: {
+      id: regions.cibao.noroeste.id,
+      name: regions.cibao.name,
+      zone: regions.cibao.noroeste.name,
+    },
+    municipality: {
+      Mao: ["Ámina ", "Guatapanal ", "Jaibón (Pueblo Nuevo)"],
+      Esperanza: ["Boca de Mao ", "Jicomé ", "Maizal ", "Paradero"],
+      "Laguna Salada": ["Cruce de Guayacanes ", "Jaibón ", "La Caya"],
+    },
+  },
+};
 
-
-  module.exports ={ regions, provinces }
-
-
+module.exports = { regions, provinces };
